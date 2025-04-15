@@ -134,6 +134,53 @@
             transform: scale(1.05);
         }
 
+        /* Education Section */
+        .education-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-title {
+            font-weight: 600;
+            color: var(--royal-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-institution {
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 0.3rem;
+        }
+
+        .education-period {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Live Icon */
+        .live-icon {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(0.95); opacity: 1; }
+        }
+
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -176,6 +223,26 @@
         <div class="content-card">
             <h2>About Me</h2>
             <p>Hello! I'm a passionate BBA student specializing in Digital Business & Entrepreneurship at IIM Bangalore. Currently exploring the intersection of technology and business strategy, with a keen interest in practical applications of digital innovation.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="content-card">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-title">
+                    <span class="live-icon"></span>BBA in Digital Business & Entrepreneurship
+                </div>
+                <div class="education-institution">Indian Institute of Management (IIM) Bangalore</div>
+                <div class="education-period">Currently Pursuing</div>
+            </div>
+            <div class="education-item">
+                <div class="education-title">Secondary Education</div>
+                <div class="education-institution">Bal Jagat Senior Secondary School</div>
+            </div>
+            <div class="education-item">
+                <div class="education-title">Primary Education</div>
+                <div class="education-institution">Air Force School Hindan</div>
+            </div>
         </div>
 
         <!-- Skills Section -->
